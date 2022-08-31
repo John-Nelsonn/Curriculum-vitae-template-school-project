@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    margin-right: 35px;
+    margin-top: -15px;
+}
+.header{
+    color: white;
+    height: 300px;
+    background: linear-gradient(to right, blue 35%,darkblue,rgb(0, 0, 59));
+    font-family: sans-serif;
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); */
+    box-shadow: 0 5px 5px -5px #333;
+    
+}
+.logo{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+
+.head{
+ 
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 23px;
+    letter-spacing: 6px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+    
+  
+}
+.nav>li>a{
+    text-decoration: none;
+    color: white;
+    position: static;
+}
+nav{
+    position: sticky;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 1080px;
+  
+  
+    
+}
+.container2{
+    
+    display: flex;
+    padding: 0 40px 0 40px;
+    margin-bottom: 30px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    box-shadow: 0 0 1px grey;
+    background-color: whitesmoke;
+    margin-top: 100px;
+    font-family: 'Roboto Mono', monospace;
+    flex-direction: column;
+  
+}
+i{
+    border: 2px solid black; 
+    border-radius: 55px;
+    padding: 10px;
+    font-size: 20px; 
+}
+
+.lappy_img{
+  position: absolute;
+  right: 40px;
+  top:25px;
+  width: 35%;
+  opacity: 0.3;
+}
+.footer{
+    font-family: sans-serif;
+    background-color: lavender;
+    text-align: center;
+    height: 70px;
+   
+    padding: 30px;
+    box-shadow: 0 -5px 5px -5px #333;
+
+}
+
+
+.blink {
+    animation: blink-animation 0.5s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.5s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  .text{
+    border-left: 2px dashed black;
+    padding-top:90px ;
+    padding-bottom:90px ;
+   position: relative;
+   top: 2%;
+   left: 19px;
+  }
+
+  .main_text2{
+    margin-top: 5%;
+  
+  }
+.main_text{
+    padding-top: 2%;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+
+  .skills {
+    
+    font-family: 'Roboto Mono', monospace;
+    font-size: 23px;
+    padding:  5px 60px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  
+
+  }
+  .parallax{
+    display: flex;
+    margin-top: 10%;
+
+    color: white;
+    justify-content: center;
+    height: 400px;
+    padding-top: 40px;
+
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  progress{
+    position: relative;
+    top: -10px;
+  }
