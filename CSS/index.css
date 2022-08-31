@@ -60,7 +60,7 @@ nav{
     
 }
 .container2{
-    
+    overflow-y: hidden;
     display: flex;
     padding: 0 40px 0 40px;
     margin-bottom: 30px;
@@ -71,19 +71,22 @@ nav{
     margin-top: 100px;
     font-family: 'Roboto Mono', monospace;
     flex-direction: column;
+
   
 }
+
 i{
-    border: 2px solid black; 
+    border: 2px solid darkblue; 
     border-radius: 55px;
     padding: 10px;
     font-size: 20px; 
+    color: darkblue;
 }
 
 .lappy_img{
   position: absolute;
   right: 40px;
-  top:25px;
+  top:45px;
   width: 35%;
   opacity: 0.3;
 }
@@ -159,4 +162,29 @@ i{
   progress{
     position: relative;
     top: -10px;
+  }
+  @media only screen and (max-width: 360px) {
+
+    
+      .head{
+        font-size: 20px;
+      }
+      .lappy_img{
+        width: 70%;
+        opacity: 0.1;
+        top: 100px;
+      }
+      .nav{
+        margin-left: 60px;
+      }
+    .container2{
+      padding-top: 10px;
+      height: 1200px;
+    }
+    .main_text2{
+      margin-top: 40px;
+    }
+    .parallax{
+      margin-top: 220px;
+    }
   }
