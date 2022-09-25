@@ -54,41 +54,40 @@ nav{
 .container{
     display: flex;
     justify-content: center;
-    height: 1080px;
+    height: auto;
   
+
   
     
 }
 .container2{
-    overflow-y: hidden;
-    display: flex;
-    padding: 0 40px 0 40px;
-    margin-bottom: 30px;
-    border: 2px solid grey;
-    border-radius: 5px;
-    box-shadow: 0 0 1px grey;
-    background-color: whitesmoke;
-    margin-top: 100px;
-    font-family: 'Roboto Mono', monospace;
-    flex-direction: column;
+  width: 100%;
+  height: 200px;
+  gap: 40px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   
 }
 
 i{
-    border: 2px solid darkblue; 
-    border-radius: 55px;
-    padding: 10px;
-    font-size: 20px; 
-    color: darkblue;
+  color: #555;
+  font-size: 90px;
+  background: -webkit-linear-gradient(darkblue, #333);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .lappy_img{
   position: absolute;
   right: 40px;
-  top:45px;
+  top:15px;
   width: 35%;
   opacity: 0.3;
+  z-index: 1;
 }
 .footer{
     font-family: sans-serif;
@@ -132,11 +131,7 @@ i{
 .main_text{
     padding-top: 2%;
   }
-  html{
-    scroll-behavior: smooth;
-  }
-
-
+ 
   .skills {
     
     font-family: 'Roboto Mono', monospace;
@@ -161,8 +156,56 @@ i{
 
   progress{
     position: relative;
-    top: -10px;
+    top: -4px;
   }
+
+  .hire{
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    padding: 15px 30px;
+    background-color: darkblue;
+    border: none;
+    border-radius:3px;
+    color: white;
+    font-weight: bold;
+  }
+  .info,.contact,.work{
+    box-shadow: 0 0 5px #333;
+   
+    width: 250px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black;
+
+
+    background: rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  /* .work{
+
+  }
+  .info{
+
+  } */
+  .view{
+    padding: 8px 25px;
+    background: transparent;
+    border: 1px solid  black;
+  }
+.title{
+  font-size: 20px;
+  font-family: sans-serif;
+  
+  
+}
   @media only screen and (max-width: 360px) {
 
     
@@ -180,6 +223,7 @@ i{
     .container2{
       padding-top: 10px;
       height: 1200px;
+
     }
     .main_text2{
       margin-top: 40px;

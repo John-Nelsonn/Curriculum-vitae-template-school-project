@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>My Portfolio </title>
     <link href="CSS/index.css" rel="stylesheet" type="text/css">
    
@@ -12,18 +13,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet"> 
-
+    <script src="cv.js"></script>
 </head>
 <body>
+  
 <section class="header">
     <nav>
         <ul>
             <span class="logo"> Jn;</span>
-            <span class="nav">
+            <!-- <span class="nav">
                 <li><a href="#info">Info</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#work">Work</a></li>
-            </span>
+            </span> -->
 
         </ul>
     </nav>
@@ -32,47 +34,55 @@
         <span class="head">
             I am John Nelson<span class="blink"> _</span>
            
-        </span>
+        </span> 
         <img class="lappy_img" src="laptop.png">
     </span>
 </section>
 
 <section class="container">
     <div class="container2"> 
-        <span id="info" class="main_text"><i class="bi bi-person"></i> Personal Information</span>
-        <span class="text">&nbsp&nbspI am a passionate self-taught software developer specified in frontend and <br>&nbsp&nbspbackend development for web applications. I also develop native applications <br>&nbsp&nbspfor both desktop and mobile systems My interest include solving programming<br>&nbsp and cryptographic challenges :)</span>
-        <span id="contact" class="main_text2"><i class="bi bi-telephone"></i> Contact</span>
-        <span class="text"> &nbsp&nbspMobile number: +233 5526 35885<br>
-            &nbsp&nbspEmail: zzorkie@gmail.com<br>
-            &nbsp&nbspDigital Address: GW-0410-7663 <BR>
-            &nbsp&nbspGithub URL: <a href = "https://github.com/zzorkie54321">link</a>
-        </span>
-        <span id="work" class="main_text2"><i class="bi bi-briefcase"></i> Work and Experience</span>
-        <span class="text">&nbsp
-        -> Undergraduate student at Ghana Communication Technology University<br>
-        &nbsp -> Internship at Crowncity Technologies  
-      
-        </span>
+        <div class="info">
+            <span class="title">Info</span>
+            <i class="bi bi-person"></i> <br>
+            <button onclick="info_func()" class="view">View</button>
+            
+        </div>
+        <div class="contact">
+            <span class="title">Phone</span>
+            <i class="bi bi-telephone"></i><br>     
+            <button onclick="phone_func()" class="view">View</button>
+        </div>
+        <div class="work">
+            <span class="title">Experience</span>
+            <i class="bi bi-briefcase"></i> <br>
+            <button onclick="work_func()" class="view">View</button>
+        </div>
     </div>
+ 
+    <button onclick="func()" class="hire">
+        Hire me
+    </button>
+    
+  
 </section>
-<section style="background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('code.avif');background-attachment: fixed;background-position: center;background-repeat: no-repeat;
+<section style="background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('code.avif');background-position: center;background-repeat: no-repeat;
 background-size: cover;" class="parallax">
     <div>
         <span class="skills">Skillset</span><br><br><br>
-        <img style="width: 50px;" src="html.png">
+        <img alt="HTML" style="width: 50px;" src="html.png">
         <progress value="82" max="100"></progress><br><br>
-        <img style="width: 50px;" src="css.png">
+        <img alt="CSS" style="width: 50px;" src="css.png">
         <progress  value="82" max="100"></progress><br><br>
-        <img style="width: 50px;" src="js.png">
+        <img alt="Javascript" style="width: 50px;" src="js.png">
         <progress  value="82" max="100"></progress><br><br>
-        <img style="width: 50px;" src="php.png">
+        <img alt="PHP" style="width: 50px;" src="php.png">
         <progress  value="82" max="100"></progress> <br><br>
     
         
     </div>
 </section>
 <footer class="footer">
-<a style="color: green;" href="https://wa.me/+233275096737"><i style="border: none;" class="bi bi-whatsapp"></i></a><br><br>
+<a style="color: green;" href="https://wa.me/+233275096737"><i style="border: none;font-size: 19px;color: green;" class="bi bi-whatsapp"></i></a><br><br>
 Copyright © 2022 | All Right Reserved | Powered By Jn Technologies 
 </footer>
 </body>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    form{
+     
+        width: 400px;
+        padding: 10px;
+
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        font-family: sans-serif;
+    }
+
+    span{
+        font-size: 20px;
+    
+    }
+    input[type=button]{
+        background: transparent;
+        padding: 5px;
+        border: 1px solid black;
+        float: right;
+    }
+    legend{
+        font-size: 20px;
+    }
+</style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Attendance sheet</legend><br><br>
+        <form id="form_name" >
+
+            <label>Student Name</label>
+            <input id="name" type="text"><br><br>
+            
+            <label>Index Number</label>
+            <input id="id" type="text"><br><br>
+
+            
+            <input type="button" value="Submit" onclick="myFunc()"></input>
+        </form>
+    </fieldset>
+</body>
+<script>
+
+   function myFunc(){
+        let name = document.getElementById("name").value
+        let id = document.getElementById("id").value
+        alert(name +'\n' +id);
+      
+    }
+</script>
+</html>
